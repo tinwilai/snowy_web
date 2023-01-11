@@ -1,0 +1,28 @@
+^O:\PERSONAL\DOCUMENTS\PROGRAMS\SNOWY\SNOWYWEB\BUILD\WINDOWS\CMAKEFILES\62D825CE97F85CAB3F7AC565A8F1FD23\FLUTTER_WINDOWS.DLL.RULE
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E env FLUTTER_ROOT=O:\Personal\SDKs\flutter PROJECT_DIR=O:\Personal\Documents\Programs\Snowy\snowyweb FLUTTER_ROOT=O:\Personal\SDKs\flutter FLUTTER_EPHEMERAL_DIR=O:\Personal\Documents\Programs\Snowy\snowyweb\windows\flutter\ephemeral PROJECT_DIR=O:\Personal\Documents\Programs\Snowy\snowyweb FLUTTER_TARGET=O:\Personal\Documents\Programs\Snowy\snowyweb\lib\main.dart DART_DEFINES=RkxVVFRFUl9XRUJfQVVUT19ERVRFQ1Q9dHJ1ZQ== DART_OBFUSCATION=false TRACK_WIDGET_CREATION=true TREE_SHAKE_ICONS=false PACKAGE_CONFIG=O:\Personal\Documents\Programs\Snowy\snowyweb\.dart_tool\package_config.json O:/Personal/SDKs/flutter/packages/flutter_tools/bin/tool_backend.bat windows-x64 Debug
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^O:\PERSONAL\DOCUMENTS\PROGRAMS\SNOWY\SNOWYWEB\BUILD\WINDOWS\CMAKEFILES\BC5FD2D336783CAF5DEAC34AE0C5018D\FLUTTER_ASSEMBLE.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^O:\PERSONAL\DOCUMENTS\PROGRAMS\SNOWY\SNOWYWEB\WINDOWS\FLUTTER\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SO:/Personal/Documents/Programs/Snowy/snowyweb/windows -BO:/Personal/Documents/Programs/Snowy/snowyweb/build/windows --check-stamp-file O:/Personal/Documents/Programs/Snowy/snowyweb/build/windows/flutter/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

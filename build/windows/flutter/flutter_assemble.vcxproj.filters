@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="O:\Personal\Documents\Programs\Snowy\snowyweb\build\windows\CMakeFiles\62d825ce97f85cab3f7ac565a8f1fd23\flutter_windows.dll.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="O:\Personal\Documents\Programs\Snowy\snowyweb\build\windows\CMakeFiles\bc5fd2d336783caf5deac34ae0c5018d\flutter_assemble.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="O:\Personal\Documents\Programs\Snowy\snowyweb\windows\flutter\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="O:\Personal\Documents\Programs\Snowy\snowyweb\build\windows\flutter\CMakeFiles\flutter_assemble" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{264A345E-3041-345C-A09D-C4F85313350D}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
