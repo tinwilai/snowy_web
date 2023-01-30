@@ -1,16 +1,45 @@
 # snowyweb
 
-A new Flutter project.
+A Flutter web for the Snowy project
 
-## Getting Started
+## To-do
 
-This project is a starting point for a Flutter application.
+- [ ] Create Home page
+  - [x] ~~Create top section~~
+  - [ ] Create concept section
+  - [ ] Create rule section
+  - [ ] Create location section
+  - [ ] Add button to Forms\
+         (at Top and Bottom)
+  - [ ] Decorate
+  - [ ] Add animations
+- [ ] Create About us page
+  - [ ] Create layout
+  - [ ] Request + Enter title, role, description
+  - [ ] Request + insert everyone's pictures
+  - [ ] Decorate
+  - [ ] Add animations
+- [ ] Create Access page
+  - [ ] Add embedded map\
+         (+ Google API to find way from current position?)
+  - [ ] Access from station
+    - [ ] ?[^1]
+  - [ ] Decorate
+  - [ ] Add animations
+- [ ] Translate pages
+  - [ ] Home page
+  - [ ] About us page
+  - [ ] Access page
 
-A few resources to get you started if this is your first Flutter project:
+## The Snowy Project
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+A snow sculpture contest made in collaboration with Nagaoka city's snow festival.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Website: [Snowy | Nagaoka Snow Sculpture Contest](https://tinwilai.github.io/snowy_web/build/web/)[^2]\
+Instagram: [snowy_nagaoka](https://www.instagram.com/snowy_nagaoka/)\
+Email: [snowy.nagaoka@gmail.com](mailto:snowy.nagaoka@gmail.com)
+
+[^1]: To be decided later.
+[^2]:
+    Current website hosting on Github Pages.
+    Once finished, will change domain.
