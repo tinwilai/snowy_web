@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_web_plugins/url_strategy.dart';
 // import 'package:flutter_nord_theme/flutter_nord_theme.dart';
 
-import 'package:snowyweb/global/appbar.dart';
 import 'package:snowyweb/global/global.dart' as global;
 
 void main() {

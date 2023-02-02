@@ -30,16 +30,20 @@ Widget card(
   Color? color,
   Color? shadowColor,
   double? width,
+  double elevation = 5,
+  BoxConstraints? constraints,
 }) {
   return Card(
     margin: margin,
-    elevation: 5,
+    elevation: elevation,
     color: color,
     shadowColor: shadowColor,
     shape: RoundedRectangleBorder(
       borderRadius: BorderRadius.circular(10),
     ),
     child: Container(
+      constraints: constraints,
+      decoration: constraints != null ? const BoxDecoration() : null,
       width: width,
       padding: padding,
       child: child,

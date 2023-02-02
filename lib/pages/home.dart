@@ -1,9 +1,14 @@
 import 'package:flutter/material.dart';
+// import 'package:scroll_snap_list/scroll_snap_list.dart';
+
 import 'package:snowyweb/global/appbar.dart';
 import 'package:snowyweb/global/global.dart' as global;
 
 import 'package:snowyweb/pages/home/top.dart';
 import 'package:snowyweb/pages/home/concept.dart';
+import 'package:snowyweb/pages/home/schedule.dart';
+import 'package:snowyweb/pages/home/rule.dart';
+import 'package:snowyweb/pages/home/location.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -20,10 +25,19 @@ class _HomeState extends State<Home> {
     });
     return Scaffold(
       appBar: MainAppbar(),
-      body: ListView(
+      body:
+          // ScrollSnapList(itemBuilder: itemBuilder, itemCount: itemCount, itemSize: itemSize, onItemFocus: onItemFocus)
+          ListView(
         shrinkWrap: false,
-        physics: const BouncingScrollPhysics(),
-        children: const [Top(), Concept()],
+        physics: const AlwaysScrollableScrollPhysics(
+            parent: BouncingScrollPhysics()),
+        children: const [
+          Top(),
+          Concept(),
+          Schedule(),
+          Rule(),
+          Location(),
+        ],
       ),
     );
   }

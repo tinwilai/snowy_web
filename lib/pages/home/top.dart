@@ -13,6 +13,15 @@ class _TopState extends State<Top> {
 
   @override
   Widget build(BuildContext context) {
+    TextStyle dowStyle = const TextStyle(
+      fontWeight: FontWeight.bold,
+      color: Colors.white,
+      fontSize: 16,
+      height: 1,
+    );
+    TextStyle dateStyle = const TextStyle(fontSize: 40);
+    EdgeInsets datePad =
+        const EdgeInsets.only(top: 25, right: 25, left: 15, bottom: 15);
     return SizedBox(
       height: global.screen.height - global.appBarHeight,
       child: Stack(
@@ -47,11 +56,11 @@ class _TopState extends State<Top> {
               mainAxisSize: MainAxisSize.min,
               children: [
                 global.card(
-                  Text(
+                  const Text(
                     "長岡雪像コンテスト",
                     style: TextStyle(
-                      fontSize: global.screen.width / 25,
-                      height: 0.98,
+                      fontSize: 55,
+                      height: 0.99,
                     ),
                   ),
                 ),
@@ -63,12 +72,7 @@ class _TopState extends State<Top> {
                         alignment: AlignmentDirectional.topEnd,
                         children: [
                           Padding(
-                            padding: EdgeInsets.only(
-                              top: global.screen.width / 60,
-                              right: global.screen.width / 60,
-                              left: global.screen.width / 100,
-                              bottom: global.screen.width / 100,
-                            ),
+                            padding: datePad,
                             child: Transform.rotate(
                               angle: dateRot,
                               child: Row(
@@ -77,27 +81,21 @@ class _TopState extends State<Top> {
                                     angle: -dateRot,
                                     child: Text(
                                       "18",
-                                      style: TextStyle(
-                                        fontSize: global.screen.width / 35,
-                                      ),
+                                      style: dateStyle,
                                     ),
                                   ),
                                   Transform.rotate(
                                     angle: -dateRot,
                                     child: Text(
                                       "/",
-                                      style: TextStyle(
-                                        fontSize: global.screen.width / 35,
-                                      ),
+                                      style: dateStyle,
                                     ),
                                   ),
                                   Transform.rotate(
                                     angle: -dateRot,
                                     child: Text(
                                       "2",
-                                      style: TextStyle(
-                                        fontSize: global.screen.width / 35,
-                                      ),
+                                      style: dateStyle,
                                     ),
                                   ),
                                 ],
@@ -105,41 +103,31 @@ class _TopState extends State<Top> {
                             ),
                           ),
                           Container(
-                            margin: EdgeInsets.all(global.screen.width / 180),
-                            padding: EdgeInsets.all(global.screen.width / 200),
+                            margin: const EdgeInsets.all(8),
+                            padding: const EdgeInsets.all(8),
                             decoration: const BoxDecoration(
                               color: Color.fromARGB(255, 70, 172, 255),
                               shape: BoxShape.circle,
                             ),
                             child: Text(
                               "土",
-                              style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                                color: Colors.white,
-                                fontSize: global.screen.width / 90,
-                                height: 1,
-                              ),
+                              style: dowStyle,
                             ),
                           )
                         ],
                       ),
-                      Padding(
-                        padding: const EdgeInsets.all(5),
+                      const Padding(
+                        padding: EdgeInsets.all(5),
                         child: Icon(
                           Icons.play_arrow_rounded,
-                          size: global.screen.width / 35,
+                          size: 40,
                         ),
                       ),
                       Stack(
                         alignment: AlignmentDirectional.topEnd,
                         children: [
                           Padding(
-                            padding: EdgeInsets.only(
-                              top: global.screen.width / 60,
-                              right: global.screen.width / 60,
-                              left: global.screen.width / 100,
-                              bottom: global.screen.width / 100,
-                            ),
+                            padding: datePad,
                             child: Transform.rotate(
                               angle: dateRot,
                               child: Row(
@@ -148,27 +136,21 @@ class _TopState extends State<Top> {
                                     angle: -dateRot,
                                     child: Text(
                                       "19",
-                                      style: TextStyle(
-                                        fontSize: global.screen.width / 35,
-                                      ),
+                                      style: dateStyle,
                                     ),
                                   ),
                                   Transform.rotate(
                                     angle: -dateRot,
                                     child: Text(
                                       "/",
-                                      style: TextStyle(
-                                        fontSize: global.screen.width / 35,
-                                      ),
+                                      style: dateStyle,
                                     ),
                                   ),
                                   Transform.rotate(
                                     angle: -dateRot,
                                     child: Text(
                                       "2",
-                                      style: TextStyle(
-                                        fontSize: global.screen.width / 35,
-                                      ),
+                                      style: dateStyle,
                                     ),
                                   ),
                                 ],
@@ -176,20 +158,15 @@ class _TopState extends State<Top> {
                             ),
                           ),
                           Container(
-                            margin: EdgeInsets.all(global.screen.width / 180),
-                            padding: EdgeInsets.all(global.screen.width / 200),
+                            margin: const EdgeInsets.all(8),
+                            padding: const EdgeInsets.all(8),
                             decoration: const BoxDecoration(
                               color: Color.fromARGB(255, 255, 105, 94),
                               shape: BoxShape.circle,
                             ),
                             child: Text(
                               "日",
-                              style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                                color: Colors.white,
-                                fontSize: global.screen.width / 90,
-                                height: 1,
-                              ),
+                              style: dowStyle,
                             ),
                           )
                         ],
