@@ -44,8 +44,8 @@ Email: [snowy.nagaoka@gmail.com](mailto:snowy.nagaoka@gmail.com)
 
 The Dart source codes are in the `lib` folder.\
 The build files are in the `build/web` folder.\
-The build command is `flutter build web --base-href /snowy_web/build/web/`
-to set base for hrefs in html to the build folder not the root of github pages.[^3]
+The build command is `flutter build web --base-href /snowy_web/`
+to set base for hrefs in html to the repository root folder not the root of the github pages.[^3]
 
 ---
 
