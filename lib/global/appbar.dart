@@ -17,23 +17,39 @@ class MainAppbar extends StatelessWidget with PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      backgroundColor: Colors.white,
-      elevation: 5,
-      title: const Text(
-        "Snowy Logo",
-        style: TextStyle(color: Colors.black),
+      toolbarHeight: global.appBarHeight,
+      backgroundColor: Colors.transparent,
+      shadowColor: Colors.transparent,
+      title: const Padding(
+        padding: EdgeInsets.only(left: 20),
+        child: Text(
+          "Snowy Logo",
+          style: TextStyle(color: Colors.black),
+        ),
       ),
       actions: <Widget>[
         for (List<String> actionStr in actionStrs)
-          TextButton(
-            onPressed: () => redirect(context, actionStr[0]),
-            child: Text(
-              actionStr[1],
-              // style: const TextStyle(
-              //   color: Colors.white,
-              // ),
+          FittedBox(
+            fit: BoxFit.scaleDown,
+            child: Card(
+              elevation: 5,
+              margin: const EdgeInsets.symmetric(horizontal: 10),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(50),
+              ),
+              child: GestureDetector(
+                onTap: () => redirect(context, actionStr[0]),
+                child: Container(
+                  margin: const EdgeInsets.all(15),
+                  child: Text(
+                    actionStr[1],
+                    textAlign: TextAlign.center,
+                  ),
+                ),
+              ),
             ),
           ),
+        const SizedBox(width: 20)
       ],
     );
   }

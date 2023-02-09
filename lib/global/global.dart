@@ -7,7 +7,7 @@ import 'package:flutter/material.dart';
 String lang = 'en';
 
 Size screen = const Size(0, 0);
-double appBarHeight = 65;
+double appBarHeight = 80;
 // Cosmos? cosmos;
 
 final router = GoRouter(

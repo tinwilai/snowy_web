@@ -23,7 +23,9 @@ class _LocationState extends State<Location> {
     _iframeElement = IFrameElement()
       ..src = _url
       ..id = 'iframe'
-      ..style.border = 'none';
+      ..style.border = 'none'
+      ..style.height = '100%'
+      ..style.width = '100%';
     //ignore: undefined_prefixed_name
     ui.platformViewRegistry.registerViewFactory(
       'iframeElement',

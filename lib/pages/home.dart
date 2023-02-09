@@ -25,6 +25,7 @@ class _HomeState extends State<Home> {
     });
     return Scaffold(
       appBar: MainAppbar(),
+      extendBodyBehindAppBar: true,
       body:
           // ScrollSnapList(itemBuilder: itemBuilder, itemCount: itemCount, itemSize: itemSize, onItemFocus: onItemFocus)
           ListView(
