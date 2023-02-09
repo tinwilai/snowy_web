@@ -25,7 +25,12 @@ class Main extends StatelessWidget {
       routerConfig: global.router,
       debugShowCheckedModeBanner: false,
       scrollBehavior: const MaterialScrollBehavior().copyWith(
-        dragDevices: PointerDeviceKind.values.toSet(),
+        dragDevices: {
+          PointerDeviceKind.mouse,
+          PointerDeviceKind.stylus,
+          PointerDeviceKind.touch,
+          PointerDeviceKind.unknown,
+        },
       ),
     );
   }
