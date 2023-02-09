@@ -36,7 +36,8 @@ jobs:
         uses: actions/upload-pages-artifact@v1
         with:
           # Upload entire repository
-          path: '.'
+          app_location: "/build/web/" # App source code path
+          output_location: "/" # Built app content directory - optional
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
