@@ -6,7 +6,7 @@ A Flutter web for the Snowy project.
 
 A snow sculpture contest made in collaboration with Nagaoka city's snow festival.
 
-Website: [Snowy | Nagaoka Snow Sculpture Contest](https://tinwilai.github.io/snowy_web/build/web/)[^3]\
+Website: [Snowy | Nagaoka Snow Sculpture Contest](https://tinwilai.github.io/snowy_web/)[^3]\
 Instagram: [snowy_nagaoka](https://www.instagram.com/snowy_nagaoka/)\
 Email: [snowy.nagaoka@gmail.com](mailto:snowy.nagaoka@gmail.com)
 
