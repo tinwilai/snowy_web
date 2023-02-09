@@ -24,13 +24,6 @@ class Main extends StatelessWidget {
       // darkTheme: NordTheme.dark(),
       routerConfig: global.router,
       debugShowCheckedModeBanner: false,
-      scrollBehavior: const MaterialScrollBehavior().copyWith(
-        dragDevices: {
-          PointerDeviceKind.mouse,
-          PointerDeviceKind.trackpad,
-          PointerDeviceKind.touch,
-        },
-      ),
     );
   }
 }
