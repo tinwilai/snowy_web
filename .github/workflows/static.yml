@@ -36,7 +36,7 @@ jobs:
         with:
           channel: 'stable'
       - run: flutter pub get
-      - run: flutter build web --base-href /snowy_web/build/web/
+      - run: flutter build web --base-href /snowy_web/
       - name: Setup Pages
         uses: actions/configure-pages@v2
       - name: Upload artifact
