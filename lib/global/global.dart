@@ -1,8 +1,6 @@
 import 'package:go_router/go_router.dart';
 import "package:snowyweb/pages/home.dart";
-// import "package:snowyweb/pages/login.dart";
 import 'package:flutter/material.dart';
-// import 'package:snowyweb/global/cosmos.dart';
 
 String lang = 'en';
 
