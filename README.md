@@ -39,6 +39,7 @@ Email: [snowy.nagaoka@gmail.com](mailto:snowy.nagaoka@gmail.com)
   - [ ] Home page
   - [ ] About us page
   - [ ] Access page
+- [ ] Dynamic size adjustment
 
 ## Notes
 
