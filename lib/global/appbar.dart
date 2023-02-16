@@ -20,11 +20,18 @@ class MainAppbar extends StatelessWidget with PreferredSizeWidget {
       toolbarHeight: global.appBarHeight,
       backgroundColor: Colors.transparent,
       shadowColor: Colors.transparent,
-      title: const Padding(
-        padding: EdgeInsets.only(left: 20),
-        child: Text(
-          "Snowy Logo",
-          style: TextStyle(color: Colors.black),
+      title: Padding(
+        padding: const EdgeInsets.only(left: 20),
+        child: GestureDetector(
+          child: const Text(
+            "SNOWY",
+            style: TextStyle(
+              color: Colors.black,
+              fontFamily: "Blanka",
+              fontSize: 40,
+            ),
+          ),
+          onTap: () => redirect(context, "/"),
         ),
       ),
       actions: <Widget>[

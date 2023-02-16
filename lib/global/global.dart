@@ -21,13 +21,14 @@ final router = GoRouter(
   ],
 );
 
-Widget card(
-  Widget child, {
+Widget card({
+  Widget? child,
   EdgeInsets padding = const EdgeInsets.all(25),
   EdgeInsets margin = const EdgeInsets.all(15),
   Color? color,
   Color? shadowColor,
   double? width,
+  double? height,
   double elevation = 5,
   BoxConstraints? constraints,
 }) {
@@ -43,6 +44,31 @@ Widget card(
       constraints: constraints,
       decoration: constraints != null ? const BoxDecoration() : null,
       width: width,
+      height: height,
+      padding: padding,
+      child: child,
+    ),
+  );
+}
+
+Widget clipCard({
+  Widget? child,
+  EdgeInsets padding = EdgeInsets.zero,
+  EdgeInsets margin = const EdgeInsets.all(15),
+  Color? color,
+  Color? shadowColor,
+  double? width,
+  double? height,
+  double elevation = 5,
+  BoxConstraints? constraints,
+}) {
+  return ClipRRect(
+    borderRadius: BorderRadius.circular(20),
+    child: Container(
+      constraints: constraints,
+      decoration: constraints != null ? const BoxDecoration() : null,
+      width: width,
+      height: height,
       padding: padding,
       child: child,
     ),

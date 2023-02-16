@@ -23,28 +23,24 @@ class _TopState extends State<Top> {
     EdgeInsets datePad =
         const EdgeInsets.only(top: 25, right: 25, left: 15, bottom: 15);
     return SizedBox(
-      height: global.screen.height - global.appBarHeight,
+      height: global.screen.height,
       child: Stack(
         children: [
           Row(
             children: [
               SizedBox(
                 width: global.screen.width * 2 / 5,
-                height: global.screen.height - global.appBarHeight,
+                height: global.screen.height,
               ),
               Card(
                 elevation: 10,
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(20),
                 ),
-                child: ClipRRect(
-                  borderRadius: BorderRadius.circular(20),
-                  child: Container(
-                    width: global.screen.width / 2,
-                    padding: EdgeInsets.zero,
-                    margin: EdgeInsets.zero,
-                    child: Image.asset("images/home_1.png", fit: BoxFit.cover),
-                  ),
+                child: global.clipCard(
+                  child: Image.asset("images/home_1.png", fit: BoxFit.cover),
+                  width: global.screen.width / 2,
+                  margin: EdgeInsets.zero,
                 ),
               ),
             ],
@@ -56,7 +52,7 @@ class _TopState extends State<Top> {
               mainAxisSize: MainAxisSize.min,
               children: [
                 global.card(
-                  const Text(
+                  child: const Text(
                     "長岡雪像コンテスト",
                     style: TextStyle(
                       fontSize: 55,
@@ -65,7 +61,7 @@ class _TopState extends State<Top> {
                   ),
                 ),
                 global.card(
-                  Row(
+                  child: Row(
                     mainAxisSize: MainAxisSize.min,
                     children: [
                       Stack(

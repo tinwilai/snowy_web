@@ -13,14 +13,14 @@ class _ConceptState extends State<Concept> {
   Widget build(BuildContext context) {
     return Container(
       alignment: Alignment.center,
-      height: global.screen.height - global.appBarHeight,
+      height: global.screen.height,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.start,
         mainAxisSize: MainAxisSize.min,
         children: [
           global.card(
-            const Text(
+            child: const Text(
               "戦",
               style: TextStyle(fontSize: 80),
             ),

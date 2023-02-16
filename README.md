@@ -15,12 +15,12 @@ Email: [snowy.nagaoka@gmail.com](mailto:snowy.nagaoka@gmail.com)
 - [ ] Create Home page
   - [x] ~~Create top section~~
   - [x] ~~Create concept section~~
-  - [ ] Create schedule section
+  - [x] ~~Create schedule section~~
   - [x] ~~Create rule section~~
   - [x] ~~Create location section (Embedded maps)~~
   - [ ] Add button to Forms\
          (at Top and Bottom)
-  - [ ] Add scroll snap
+  - [x] ~~Add scroll snap~~
   - [ ] Decorate
   - [ ] Add animations
 - [ ] Create About us page
@@ -77,6 +77,15 @@ This Flutter project is made possible with these projects:
 - [go_router](https://pub.dev/packages/go_router)
   by [flutter.dev](https://pub.dev/publishers/flutter.dev/packages)
   ([BSD-3-Clause license](https://choosealicense.com/licenses/bsd-3-clause/))
+
+### Fonts
+
+- [M PLUS Rounded 1c](https://mplusfonts.github.io/)
+  by [Coji Morishita](http://www.underforest.com/)
+  ([SIL Open Font License](https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL_web))
+- [Blanka](https://troisieme-type.com/blanka)
+  by [Emmeran Richard](https://www.emmeranrichard.fr/)
+  ([License](https://troisieme-type.com/blanka))
 
 ### Others
 

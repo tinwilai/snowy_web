@@ -37,13 +37,13 @@ class _LocationState extends State<Location> {
   Widget build(BuildContext context) {
     return Container(
       alignment: Alignment.center,
-      height: global.screen.height - global.appBarHeight,
-      child: SizedBox(
-        width: global.screen.width * 3 / 4,
-        height: global.screen.height * 3 / 4,
+      height: global.screen.height,
+      child: global.clipCard(
         child: const HtmlElementView(
           viewType: 'iframeElement',
         ),
+        width: global.screen.width * 3 / 4,
+        height: global.screen.height * 3 / 4,
       ),
     );
   }

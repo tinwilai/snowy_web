@@ -19,13 +19,13 @@ class _RuleState extends State<Rule> {
   Widget build(BuildContext context) {
     return Container(
       alignment: Alignment.centerLeft,
-      height: global.screen.height - global.appBarHeight,
+      height: global.screen.height,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           global.card(
-            const Text(
+            child: const Text(
               "ルール",
               style: TextStyle(fontSize: 50),
             ),
@@ -35,7 +35,7 @@ class _RuleState extends State<Rule> {
           ),
           for (String rule in rules)
             global.card(
-              Text(
+              child: Text(
                 rule,
                 style: const TextStyle(fontSize: 25),
               ),
